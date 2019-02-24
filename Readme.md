@@ -8,11 +8,11 @@ The Stomp Shield for Arduino from Open Music Labs use an Arduino Uno and four op
 
 Compared to the previous instructable using the ATMega1284 effects unit, this box has the following advantages:
 
-* (1) It has a mixer which mixes the unprocessed signal with the MCU processed signal - that means that the quality of the signal at the output is much improved.
-* (2) It does 16 bit output processing for the two PWM outputs wheras the previous effects box use 8 bits for some of the examples such as the delay effect.
-* (3) It has a feedback potentiometer which can be used to enhance the effects - especially with the flanger/phaser effect about 30 percent feedback adds considerably to the quality of the effect.
-* (4) The low-pass filter frequency is 10 kHz compared to the 5 kHz of the previous effects box - this means the signal at the output sounds considerably "crispier".
-* (5) It use a different interrupt trigger which may explain the considerably lower noise level shown by this effects box.
+1. It has a mixer which mixes the unprocessed signal with the MCU processed signal - that means that the quality of the signal at the output is much improved.
+2. It does 16 bit output processing for the two PWM outputs wheras the previous effects box use 8 bits for some of the examples such as the delay effect.
+3. It has a feedback potentiometer which can be used to enhance the effects - especially with the flanger/phaser effect about 30 percent feedback adds considerably to the quality of the effect.
+4. The low-pass filter frequency is 10 kHz compared to the 5 kHz of the previous effects box - this means the signal at the output sounds considerably "crispier".
+5. It use a different interrupt trigger which may explain the considerably lower noise level shown by this effects box.
 
 I started by bread-boarding the Uno-based Open Music Labs Stompbox Shield and I was so impressed with the performance of this four OpAmp signal processing circuit (even when using an Arduino Uno), that I transferred it to stripboard for more permanent use.
 
@@ -111,7 +111,12 @@ http://wiki.openmusiclabs.com/wiki/StompShield
 -(3) ATMega1284 Effects Pedal
 https://www.instructables.com/id/ATMega1284P-Guitar-and-Music-Effects-Pedal/
 
--(4) Electrosmash https://www.electrosmash.com/pedalshield-uno
--(5) Open Music labs Music http://wiki.openmusiclabs.com/wiki/StompShield 
--(6) ATMega Effect Pedal https://www.instructables.com/id/ATMega1284P-Guitar-and-Music-Effects-Pedal/
+-(4) Electrosmash 
+https://www.electrosmash.com/pedalshield-uno
+
+-(5) Open Music labs Music
+http://wiki.openmusiclabs.com/wiki/StompShield 
+
+-(6) ATMega Effect Pedal 
+https://www.instructables.com/id/ATMega1284P-Guitar-and-Music-Effects-Pedal/
 
