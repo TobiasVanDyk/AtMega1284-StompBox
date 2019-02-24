@@ -67,24 +67,20 @@ The software is based on the Open Music Labs stompbox pedal sketches, and the tw
 Other examples such as the tremolo from the Open Music Labs website for the pedalSHIELD Uno can be adapted for use by the Mega1284 by changing the include header file Stompshield.h:
 
 Change:
- 
+```
 DDRB |= 0x06; // set pwm outputs (pins 9,10) to output
-
 to 
-
 DDRD |= 0x30;
-
+```
 and
 
+```
 ADMUX = 0x62; // left adjust, adc2, internal vcc as reference
-
 to
-
 ADMUX = 0x60; // left adjust, adc0, internal vcc as reference
-
 // These changes are the ONLY essential code changes 
-
 // when porting from the Uno to the ATMega1284 
+```
 
 For the two examples included the header file required are included in the sketch - i.e. no header files need to be used
 
