@@ -88,14 +88,11 @@ The pushbuttons 1 and 2 are used in some of the sketches to increase or decrease
 
 
 To change the delay to an echo effect (add repetition) change the line:
-
+```
 buffer[location] = input;                               // store new sample
-
 to
-
 buffer[location] = (input + buffer[location])>>1;       // Use this for echo effct
-
-
+```
 The footswitch should be a three pole two way switch
 
 ### Links
