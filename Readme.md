@@ -2,7 +2,7 @@
 
 Instructable at: https://www.instructables.com/id/ATMega1284-Quad-Opamp-Effects-Box/
 
-<img src="https://github.com/TobiasVanDyk/AtMega1284-StompBox/blob/master/Photo1.jpg" width="1326" height="1156" />
+<img src="https://github.com/TobiasVanDyk/AtMega1284-StompBox/blob/master/Photo1.jpg" width="663" height="578" />
 
 The Stomp Shield for Arduino from Open Music Labs use an Arduino Uno and four opamps as a guitar effects box. Similar to the previous instructable (https://www.instructables.com/id/ATMega1284P-Guitar-and-Music-Effects-Pedal/), that shows how to port the Electrsmash Uno Pedalshield, I have also ported the Open Music Labs Guitar Effects box to the ATMega1284P which has eight times more RAM than the Uno (16kB versus 2kB). 
 
@@ -54,9 +54,9 @@ Circuit 1 shows the circuit used and Stripboard 1 is its physical representation
 
 **OpAmp Input and Output Stages:** It is important that a RRO or preferably a RRIO OpAmp is used because of the large voltage swing required at the OpAmp output to the ADC of the ATMega1284. The parts list contains a number of alternative OpAmp types. The 50k potentiometer is used to adjust the input gain to a level just below any distortion, and it can also be used to adjust the input sensitivity for an input source other than a guitar such as a music player. The second OpAmp input stage and the first opamp output stage has a higher order RC filter to remove the digitally generated MCU noise from the audio stream. 
 
-** ADC Stage:** The ADC is configured to be reading via an timer interrupt. A 100nF capacitor should be connected between the AREF pin of the ATMega1284 and ground to reduce noise as an internal Vcc source is used as a reference voltage - do NOT connect the AREF pin to +5 volt directly!
+**ADC Stage:** The ADC is configured to be reading via an timer interrupt. A 100nF capacitor should be connected between the AREF pin of the ATMega1284 and ground to reduce noise as an internal Vcc source is used as a reference voltage - do NOT connect the AREF pin to +5 volt directly!
 
-** DAC PWM Stage:** As the ATMega1284 does not have its own DAC, the output audio waveforms are generated using a pulse width modulation of an RC filter. The two PWM outputs on PD4 and PD5 are set as the high and low bytes of the audio output and mixed with the two resistors (3k9 and 1M) in a 1:256 ratio (low byte and high byte) - which generates the audio output. 
+**DAC PWM Stage:** As the ATMega1284 does not have its own DAC, the output audio waveforms are generated using a pulse width modulation of an RC filter. The two PWM outputs on PD4 and PD5 are set as the high and low bytes of the audio output and mixed with the two resistors (3k9 and 1M) in a 1:256 ratio (low byte and high byte) - which generates the audio output. 
 
 ### Software
 
@@ -102,21 +102,10 @@ The footswitch should be a three pole two way switch
 
 ###Links
 
--(1) Electrosmash: 
-https://www.electrosmash.com/pedalshield-uno
-
--(2) Open Music Labs: 
-http://wiki.openmusiclabs.com/wiki/StompShield
-
--(3) ATMega1284 Effects Pedal
-https://www.instructables.com/id/ATMega1284P-Guitar-and-Music-Effects-Pedal/
-
--(4) Electrosmash 
-https://www.electrosmash.com/pedalshield-uno
-
--(5) Open Music labs Music
-http://wiki.openmusiclabs.com/wiki/StompShield 
-
--(6) ATMega Effect Pedal 
-https://www.instructables.com/id/ATMega1284P-Guitar-and-Music-Effects-Pedal/
+1. Electrosmash: https://www.electrosmash.com/pedalshield-uno
+2. Open Music Labs: http://wiki.openmusiclabs.com/wiki/StompShield
+3. ATMega1284 Effects Pedal: https://www.instructables.com/id/ATMega1284P-Guitar-and-Music-Effects-Pedal/
+4. Electrosmash: https://www.electrosmash.com/pedalshield-uno
+5. Open Music labs Music: http://wiki.openmusiclabs.com/wiki/StompShield 
+6. ATMega Effect Pedal: https://www.instructables.com/id/ATMega1284P-Guitar-and-Music-Effects-Pedal/
 
