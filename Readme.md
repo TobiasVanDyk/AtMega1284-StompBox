@@ -58,6 +58,8 @@ Circuit 1 shows the circuit used and Stripboard 1 is its physical representation
 
 **DAC PWM Stage:** As the ATMega1284 does not have its own DAC, the output audio waveforms are generated using a pulse width modulation of an RC filter. The two PWM outputs on PD4 and PD5 are set as the high and low bytes of the audio output and mixed with the two resistors (3k9 and 1M) in a 1:256 ratio (low byte and high byte) - which generates the audio output. 
 
+<img src="https://github.com/TobiasVanDyk/AtMega1284-StompBox/blob/master/Stripboard1.png" width="1071" height="550" />
+
 ### Software
 
 The software is based on the Open Music Labs stompbox pedal sketches, and the two examples are included namely the flanger/phaser effect, and the delay effect. Again the switches and LED had been moved to other ports away from those used by the ISP programmer (SCLK, MISO, MOSI and Reset), the delay buffer has been increased from 1000 words to 7000 words, and PortD has been set as the output for the two PWM signals. Even with the increase in the delay buffer the sketch still use only about 75% of the available ATMega1284 16 kB RAM.
@@ -100,7 +102,7 @@ buffer[location] = (input + buffer[location])>>1;       // Use this for echo eff
 
 The footswitch should be a three pole two way switch
 
-###Links
+### Links
 
 1. Electrosmash: https://www.electrosmash.com/pedalshield-uno
 2. Open Music Labs: http://wiki.openmusiclabs.com/wiki/StompShield
