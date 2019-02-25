@@ -4,7 +4,7 @@ Instructable at: https://www.instructables.com/id/ATMega1284-Quad-Opamp-Effects-
 
 <img src="https://github.com/TobiasVanDyk/AtMega1284-StompBox/blob/master/Photo1.jpg" width="663" height="578" />
 
-The Stomp Shield for Arduino from Open Music Labs use an Arduino Uno and four opamps as a guitar effects box. Similar to a previous design (With an instructable at https://www.instructables.com/id/ATMega1284P-Guitar-and-Music-Effects-Pedal/), that shows how to port the Electrsmash Uno Pedalshield, I have also ported the Open Music Labs Guitar Effects box to the ATMega1284P which has eight times more RAM than the Uno (16kB versus 2kB). 
+The Stomp Shield for Arduino from Open Music Labs use an Arduino Uno and four opamps as a guitar effects box. Similar to a previous design (also with an instructable at https://www.instructables.com/id/ATMega1284P-Guitar-and-Music-Effects-Pedal/), that shows how to port the Electrosmash Uno Pedalshield, I have also ported the Open Music Labs Guitar Effects box to the ATMega1284P which has eight times more RAM than the Uno (16kB versus 2kB). 
 
 Compared to the previous instructable using the ATMega1284 effects unit, this box has the following advantages:
 
