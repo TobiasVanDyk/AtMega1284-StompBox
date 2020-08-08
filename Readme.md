@@ -1,10 +1,10 @@
 # ATMega1284 Quad Opamp Effects Box
 
-Instructable at: https://www.instructables.com/id/ATMega1284-Quad-Opamp-Effects-Box/
+Also refer to the [**Instructable**](https://www.instructables.com/id/ATMega1284-Quad-Opamp-Effects-Box/).
 
-<img src="https://github.com/TobiasVanDyk/AtMega1284-StompBox/blob/master/Photo1.jpg" width="663" height="578" />
+<img src="images/Photo1.jpg" width="663" />
 
-The Stomp Shield for Arduino from Open Music Labs use an Arduino Uno and four opamps as a guitar effects box. Similar to a previous design (also with an instructable at https://www.instructables.com/id/ATMega1284P-Guitar-and-Music-Effects-Pedal/), that shows how to port the Electrosmash Uno Pedalshield, I have also ported the Open Music Labs Guitar Effects box to the ATMega1284P which has eight times more RAM than the Uno (16kB versus 2kB). 
+The Stomp Shield for Arduino from Open Music Labs use an Arduino Uno and four opamps as a guitar effects box. Similar to a previous design (also with an instructable [**ATMega1284P-Guitar-and-Music-Effects-Pedal**](https://www.instructables.com/id/ATMega1284P-Guitar-and-Music-Effects-Pedal/), that shows how to port the Electrosmash Uno Pedalshield, I have also ported the Open Music Labs Guitar Effects box to the ATMega1284P which has eight times more RAM than the Arduino Uno (16kB versus 2kB). 
 
 Compared to the previous instructable using the ATMega1284 effects unit, this box has the following advantages:
 
@@ -48,7 +48,7 @@ As previously noted, although development boards for the ATMega1284 are availabl
 
 ### Construction
 
-<img src="https://github.com/TobiasVanDyk/AtMega1284-StompBox/blob/master/Circuit1.png" width="1026" height="628" />
+<img src="images/Circuit1.png" width="1026" />
 
 Circuit 1 (above), shows the circuit used and Stripboard 1 (see below), is its physical representation (Fritzing 1 in the file-list) with Photo 1 (at the top), the actual bread-boarded circuit in operation. Two small circuit changes were made: The shared half-level opamp bias circuit and the feedback capitors were increased to 120pF. The rotary control was replaced with two pushbuttons which are used to increase or decrease effects parameters. The three-wire connection to the ATMega1284 is shown on the circuit as ADC to pin 40, PWMlow from pin 19, and PWMhigh from pin 18. The three push buttons are coneccted to pins 1, 36 and 35 and earthed at the other end. An LED is connected via a 470 resistor to pin 2.
 
@@ -58,7 +58,7 @@ Circuit 1 (above), shows the circuit used and Stripboard 1 (see below), is its p
 
 **DAC PWM Stage:** As the ATMega1284 does not have its own DAC, the output audio waveforms are generated using a pulse width modulation of an RC filter. The two PWM outputs on PD4 and PD5 are set as the high and low bytes of the audio output and mixed with the two resistors (3k9 and 1M) in a 1:256 ratio (low byte and high byte) - which generates the audio output. 
 
-<img src="https://github.com/TobiasVanDyk/AtMega1284-StompBox/blob/master/Stripboard1.png" width="1071" height="550" />
+<img src="images/Stripboard1.png" width="1071" />
 
 ### Software
 
